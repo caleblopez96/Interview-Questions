@@ -1,30 +1,40 @@
-/*
-    Question: How can you optimize a website for performance?
-    
-    Answer: There are several ways to optimize a website for
-    performance, including:
-    Minifying and compressing files to reduce the size of the page
-    and speed up loading times.
-    Using a content delivery network (CDN) to distribute content
-    closer to users and reduce latency.
-    Using caching techniques to store frequently used resources
-    locally, reducing the amount of data that needs to be
-    transferred.
-    Optimizing images and videos to reduce their file sizes. 
-    Using lazy loading to defer loading of non-critical resources
-    until they are needed.
-*/
+// Key:
+//! = Question
+//* = Answer
+//? = Explanation
 
 
-/* 
-    Question: Explain the difference between var, let, and const.
+//! Question: How can you optimize a website for performance?
 
-    Answer: var is function scoped, let and const are block
-    scoped. var can be re-declared and re-assigned within its
-    scope, while const cannot be re-assigned but its properties
-    can be changed. let can be re-assigned and changed within its
-    scope.
-*/
+//* Answer: There are several ways to optimize a website for performance:
+
+//? Minifying and compressing files to reduce the size of the page
+//? and speed up loading times.
+
+//? Using a content delivery network (CDN) to distribute content
+//? closer to users and reduce latency.
+
+//? Using caching techniques to store frequently used resources
+//? locally, reducing the amount of data that needs to be
+//? transferred.
+
+//? Optimizing images and videos to reduce their file sizes. 
+//? Using lazy loading to defer loading of non-critical resources
+//? until they are needed.
+
+
+
+
+//! Explain the difference between var, let, and const.
+
+//* var is function scoped, let and const are block scoped. 
+
+//? var can be re-declared and re-assigned within its scope.
+
+//? const cannot be re-assigned, but its properties can be changed. 
+
+//? let can be re-assigned and changed within its scope.
+
 
 
 /*
