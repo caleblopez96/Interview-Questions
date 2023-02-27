@@ -130,6 +130,18 @@ const myFunction2 = () => {
 
 
 
+//! Question: What is async/await
+
+//* Answer: async/await allows you to write asynchronous code.
+//* When a long-running task needs to be performed without blocking the
+//* main threat execution.
+
+//? This can be useful for making network request or accessing a database.
+
+
+
+
+
 //! Question: What is the difference between null and undefined in JavaScript?
 
 //* Answer: null is a value that represents the intentional absence of any object value.
