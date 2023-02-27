@@ -133,3 +133,22 @@ const greeting = name => return ("hello" + name);
 //* Answer: Prototype-based inheritance in JavaScript is a way of sharing properties and methods among objects without the need for a class. 
 
 //? In JavaScript, objects can inherit properties and methods from other objects through their prototypes. This means that an object can inherit properties and methods from its prototype, which can in turn inherit properties and methods from its own prototype, and so on.
+
+
+
+
+//! What is a class in Javascript?
+
+//* A class is template for creating objects that share similair structures and behaviors. 
+
+class car {
+  constructor(year, make, model) {
+    this.year = year;
+    this.make = make;
+    this.model = model;
+  }
+    const carDetails = () => return `I have a ${this.year}, ${this.make} ${this.model}`;
+} 
+
+const myCar = new car(2018, "honda", "civic");
+console.log(myCar.carDetails());
