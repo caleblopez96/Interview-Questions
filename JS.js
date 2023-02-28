@@ -247,6 +247,30 @@ const parsedUser = JSON.parse(jsonString); // from JSON to javascript
 
 
 
+//! Question: What are promises and what are they used for?
+
+//* Answer: Promises are a way to handle asynchronous operations, like fetching data from a server or making an API call. 
+
+//? Promises allow for you to write code that can respond to the results of asynchronous operations once complete, and doesn't block the main thread of execution.
+
+//TODO api not working
+const randomPassword = () => {
+    return new Promise((resolve, reject) => {
+        fetch('https://api.fungenerators.com/password/generate?length=12&characters=lowercase,uppercase,numbers,symbols')
+        .then(response => response.json())
+        .then(data => {
+            resolve(data.contents.password);
+        })
+        .catch(error => {
+            reject(error);
+        });
+    });
+}
+
+randomPassword()
+.then(password => console.log(password))
+.catch(error => console.log(error));
+
 //! Question: How do you fetch data from an API with Javascript?
 
 //* Answer: To fetch data from an API using Javscript, you can use the 'fetch' and 'catch' methods to fetch API data. 
