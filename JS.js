@@ -8,11 +8,9 @@
 
 //* Answer: There are several ways to optimize a website for performance:
 
-//? Minifying and compressing files to reduce the size of the page
-//? and speed up loading times.
+//? Minifying and compressing files to reduce the size of the page and speed up loading times.
 
-//? Using a content delivery network (CDN) to distribute content
-//? closer to users and reduce latency.
+//? Using a content delivery network (CDN) to distribute content closer to users and reduce latency.
 
 //? Using caching techniques to store frequently used resources
 //? locally, reducing the amount of data that needs to be
@@ -63,7 +61,7 @@ document.querySelector('button').addEventListener('click', changeBackgroundColor
 //* Answer: Functions can be declared by using the following:
 //* Function keyword, function expression, arrow function.
 
-//? Function keyword 
+//? Function keyword (regular function)
 function keyword() {
     // your function goes here
 }
@@ -73,10 +71,24 @@ const myFunction = function() {
     // your function goes here
 }
 
-//? Arrow function
+//? Arrow function multiple statments, no arguments
 const myFunction2 = () => {
     // your function goes here
 }
+
+//? Arrow function with multiple statements and arguments
+const myFunction3 = (...param) => {
+    // your function goes here
+}
+
+//? Arrow function implicit return 
+const subtraction = (num1, num2) => (num1 + num2);
+
+//? Arrow function single statement
+const add = (num1, num2) => num1 + num2;
+
+//? Arrow function single argument and single statement
+const greeting = name => console.log(`Hello ${name}.`);
 
 
 
