@@ -275,6 +275,14 @@ const parsedUser = JSON.parse(jsonString); // from JSON to javascript
 //? Promises allow for you to write code that can respond to the results of asynchronous operations once complete, and doesn't block the main thread of execution.
 
 //TODO api not working
+//TODO fix the request option
+const requestConfig = {
+    method: 'GET',
+    headers: {
+        "content type" : "application/json"
+    }
+}
+
 const randomJoke = () => {
     return new Promise((resolve, reject) => {
         fetch('https://official-joke-api.appspot.com/random_joke')
