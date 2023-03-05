@@ -102,6 +102,11 @@ const add = (num1, num2) => num1 + num2;
 //? Arrow function single argument and single statement
 const greeting = name => console.log(`Hello ${name}.`);
 
+//? Function constructor 
+const myFunction4 = new Function(
+// your function here
+);
+
 
 
 
@@ -279,13 +284,13 @@ const parsedUser = JSON.parse(jsonString); // from JSON to javascript
 const requestConfig = {
     method: 'GET',
     headers: {
-        "content type" : "application/json"
+        "Content-Type" : "application/json"
     }
 }
 
 const randomJoke = () => {
     return new Promise((resolve, reject) => {
-        fetch('https://official-joke-api.appspot.com/random_joke')
+        fetch('https://official-joke-api.appspot.com/random_joke', requestConfig)
         .then(response => response.json())
         .then(data => {
             resolve(data);
