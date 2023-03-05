@@ -258,7 +258,7 @@ function fetchData() {
 // using JSON.stringify() and JSON.parse().
 class User {
     constructor(age, sex, location) {
-        this.age = age;
+        this.name = name;
         this.sex = sex;
         this.location = location;
     } 
@@ -376,3 +376,57 @@ class Car {
 
 const myCar = new Car('Red', '2018', 'Honda', 'Civic');
 console.log(`You car color is: ${myCar.color}`);
+
+
+
+
+//! What are the different types of loops in Javascript
+
+//* There are four different types of loops in Javascript: For loops, while loops, do while, forEach 
+
+// for loop
+for (let i = 0; i < 5; i++) {
+    console.log(i); // 0 1 2 3 4
+}
+
+// for in (objects)
+const person = {
+    name: 'John',
+    age: '30'
+}
+
+for (let key in person) {
+    console.log(key, person[key]); 
+    // name John
+    // age 30
+}
+
+// for of (arrays)
+const colors = ['red', 'orange', 'yellow'];
+
+for (let color of colors) {
+    console.log(color); // red orange yellow
+}
+
+// while loop
+let j = 0;
+
+while (j < 5) {
+    console.log(j) // 1 2 3 4
+    j++
+}
+
+// do while loop
+j = 0;
+
+do {
+    console.log('hi'); // hi hi hi hi hi
+    j++
+} while (j < 5);
+
+// forEach
+const cars = ['honda', 'chevy', 'toyota'];
+
+cars.forEach((element) => {
+    console.log(element.toUpperCase()); // HONDA CHEVY TOYOTA
+});
