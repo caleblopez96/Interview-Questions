@@ -430,3 +430,16 @@ const cars = ['honda', 'chevy', 'toyota'];
 cars.forEach((element) => {
     console.log(element.toUpperCase()); // HONDA CHEVY TOYOTA
 });
+
+
+
+
+//! What is recursion?
+
+//* Recursion happens when a function calls itself, either directly or indirectly. 
+
+//? In a recursive function, the function repeatedly breaks down a problem into smaller and smaller sub-problems until it reaches a base case, which is a problem that is simple enough to solve directly.
+
+function factorial(num) {
+    return (num === 0 ? 1 : num * factorial(num - 1));
+}
