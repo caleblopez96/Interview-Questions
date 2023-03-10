@@ -441,5 +441,24 @@ cars.forEach((element) => {
 //? In a recursive function, the function repeatedly breaks down a problem into smaller and smaller sub-problems until it reaches a base case, which is a problem that is simple enough to solve directly.
 
 function factorial(num) {
-    return (num === 0 ? 1 : num * factorial(num - 1));
+    return num === 0 ? 1 : num * factorial(num - 1);
 }
+
+
+
+
+//! What is the spread operator and why is it useful?
+
+//* The spread operator in JavaScript is represented by three consecutive dots (...) and is used to "spread" or expand an iterable object like an array, string, or object into individual elements.
+
+function sum(...numbers) {
+    let total = 0;
+    for(const number of numbers) {
+        total += number;
+    }
+    return total // sum(1, 2, 5, 10, 15) = 33
+}
+
+const obj1 = {a: 1, b: 2};
+const obj2 = {c: 3, d: 4};
+const mergedObj = {...obj1, ...obj2}; // { a: 1, b: 2, c: 3, d: 4 }
