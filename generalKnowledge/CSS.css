@@ -6,50 +6,150 @@
 
 
 
-/* 
-    Question: What is CSS and what is it used for?
+/*! Question: What is CSS and what is it used for?
 
-    Answer: CSS or Cascading Style Sheets is used for page layout
-    and styling. 
-    CSS provides the tools needed to customize the look and feel
-    of any web page, including the colors, fonts, sizes and spacing.
+Answer: CSS or Cascading Style Sheets is used for page layout and styling. CSS provides the tools needed to customize the look and feel of any web page, including the colors, fonts, sizes and spacing.
+
 */
 
 
-/* 
-    Question: What is the CSS box model & what does it consist of?
 
-    Answer: The CSS Box Model is the way that CSS defines the size
-    and layout of HTML elements on a web page.
-    It consists of four parts:
-    content, padding, border, and margin. 
-    content: is the area that contains the content of the element. 
-    padding: is the space around the content. 
-    border: is a decorative line around the padding and content. 
-    margin: is the space outside of the border.
+
+/*! Question: What is the CSS box model & what does it consist of?
+
+Answer: The CSS Box Model is the way that CSS defines the siz and layout of HTML elements on a web page It consists of four parts content, padding, border, and margin. 
+- content: is the area that contains the content of the element. 
+- padding: is the space around the content. 
+- border: is a decorative line around the padding and content. 
+- margin: is the space outside of the border.
+
 */
 
 
-/* 
-    Question: What is Responsive Design and what is it used for?
 
-    Answer: Responsive Design is a web design approach that makes
-    web pages look good on all devices, regardless of the size of
-    the screen or device. Responsive Design is used to create a
-    single web page that adapts to different screen sizes and
-    resolutions, and it is achieved using CSS media queries,
-    flexible grid-based layouts, and other techniques.
+
+/*! Question: What is Responsive Design and what is it used for?
+
+Answer: Responsive Design is a web design approach that makes web pages look good on all devices, regardless of the size of the screen or device. Responsive Design is used to create a single web page that adapts to different screen sizes and resolutions, and it is achieved using CSS media queries, flexible grid-based layouts, and other techniques.
+
 */
 
 
-/*
-    Question: What is a CSS preprocessor and what is it used for?
 
-    Answer: A CSS preprocessor is a scripting language that
-    extends the functionality of CSS, allowing you to use
-    variables, functions, and other programming constructs when
-    writing CSS. CSS preprocessors are used to make writing and
-    maintaining CSS easier, by allowing you to write code in a
-    more modular and organized way, and to reuse styles and code
-    snippets throughout your CSS.
+
+/*! Question: What is a CSS preprocessor and what is it used for?
+
+Answer: A CSS preprocessor is a scripting language that extends the functionality of CSS, allowing you to use variables, functions, and other programming constructs when writing CSS. CSS preprocessors are used to make writing and maintaining CSS easier, by allowing you to write code in a more modular and organized way, and to reuse styles and code snippets throughout your CSS.
+
+*/
+
+/*! Show all the CSS Selectors
+
+Answer:
+
+* {
+    all elements
+}
+
+div {
+    all div tags
+}
+
+div, p {
+    all divs and paragraphs
+}
+
+div p {
+    paragraphs inside of divs
+}
+
+div > p {
+    all p tags, one level deep inside of divs
+}
+
+div + p {
+    p tags immediately after div
+}
+
+div - p {
+    p tags preceded my divs
+}
+
+.className {
+    all elements with class
+}
+
+#idName {
+    all elements with id
+}
+
+div.classname {
+    all divs with certain class name
+}
+
+div#idName {
+    divs with certain id
+}
+
+#idName * {
+    all elements inside of id
+}
+
+*/
+
+
+
+
+/*! Question: Show all psuedo selectors
+
+a:link {link in normal state}
+a:active {link in clicked state}
+a:hover {link with mouse over it}
+a:visited {visited link}
+p::after {add content after p}
+p::before {add content before p}
+
+input:checked {checked inputs}
+input:disabled {disabled inputs}
+input:enabled {enabled inputs}
+input:focus {input has focus}
+input:in-range {value in range}
+input:out-of-range {value out of range}
+input:valid {input with valid value}
+input:invalid {input with invalid value}
+input:optional {no required attribute}
+input:required {input with required attribute}
+input:read-only {with read-only attribute}
+input:read-write {no read-only attribute}
+div:empty {element with no children}
+
+p::first-letter {first letter in p}
+p::first-line {first line in p}
+p:first-of-type {first of some type}
+p:last-of-type(last of some type)
+p:lang(en) {p with en language attribute}
+:not(span) {elements that are not a span element}
+
+a:first-child {first child of its parent}
+a:last-child {last child of its parent}
+a:nth-child(2) {second child of its parent}
+a:nth-child(3n+1) {nth-child (an + b) formula}
+a:nth-last-child(2) {second from last child}
+a:nth-of-type(2) {second a of its parent}
+a:nth-last-of-type(2) {... from behind}
+a:only-of-type {unique of its parent}
+a:only-child {only child of its parent}
+:root {the documents root element}
+::selection {portion selection by user} 
+:target {highlight active anchor}
+
+a[target] {links with a target attribute}
+a[target = "_blank"]
+[title~="Word"] {title element containing some word}
+[class^="Word"] {class starts with certain word}
+[class |="Word"] {class starts with the word}
+[class*="Word"] {class contains the word}
+[class$="Word"] {class ends with the word}
+input[type = "button"] {specified input type}
+
 */
