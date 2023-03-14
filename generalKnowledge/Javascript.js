@@ -474,3 +474,86 @@ function sum(...numbers) {
 const obj1 = {a: 1, b: 2};
 const obj2 = {c: 3, d: 4};
 const mergedObj = {...obj1, ...obj2}; // { a: 1, b: 2, c: 3, d: 4 }
+
+
+
+
+//! Question: What is REST API?
+
+//* Answer: REST is a web architecture that allows different systems to communicate with each other through a set of standardized rules and protocols. 
+
+//? REST APIs use HTTP methods (GET, POST, PUT, DELETE, etc.) to retrieve or manipulate data and resources from a web server.
+
+const url = 'https://websiteURL.com'
+
+// GET request 
+fetch(url)
+.then(response => response.json())
+.then(data => {
+    // access data in the JSON object
+})
+.catch(error => console.error(error));
+
+// POST request
+const newPost = {
+    title: 'New post',
+    body: 'This is my new content.',
+    userId: 1
+}
+
+fetch(url, {
+    method: 'POST',
+    headers: {
+        'Content-Type' : 'application/json'
+    },
+    body: JSON.stringify(newPost)
+})
+.then(response => response.json())
+.then(data => console.log(data))
+.catch(error => console.error(error));
+
+// PUT request
+const updatedPost = {
+    id: 1,
+    title: 'My updated post',
+    body: 'This is my updated content',
+    uderId: 1
+}
+
+fetch(`${url}/${updatedPost.id}`,{
+    method: 'PUT',
+    headers: {
+        'Content-Type' : 'application/json'
+    },
+    body: JSON.stringify(updatedPost)
+})
+.then(response => response.json())
+.then(data => console.log(data))
+.catch(error => console.error(error));
+
+
+
+
+//! Question: How do you work with dates in Javascript?
+
+//* Answer: You can work with dates using the built-in 'Date' object.
+
+//? The Date object provides numerous methods for working with dates.
+
+const date = new Date(); // Tue Mar 14 2023 17:33:31 GMT-0600 (Mountain Daylight Time)
+date.getDate(); // returns the currrent day --> 14
+date.getMonth() + 1; // returns the current month index + 1 --> 3
+date.getFullYear(); // returns full year --> 2023
+date.getHours(); // returns current hour --> 17
+date.getMinutes(); // returns current minutes --> 38
+date.getSeconds(); // returns current seconds --> 31
+date.getMilliseconds(); // returns current milliseconds 
+date.getTime(); // returns unix timestamp --> 1678836811532
+date.setDate(14); // sets the current date to 15
+date.setMonth(3); // sets month to second month 
+date.setFullYear(2024); // sets year to 2024
+date.setHours(10); // sets hours to 10 
+date.setMinutes(45); // sets minutes to 45
+date.setSeconds(30); // sets seconds to 30
+date.setMilliseconds(20); // sets milliseconds to 20
+date.setTime(1678836811532); // sets unix time
