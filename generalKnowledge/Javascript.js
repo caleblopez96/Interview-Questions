@@ -19,7 +19,7 @@
 
 
 
-//! Question: Explain the difference between var, let, and const.
+//! Question: Explain the difference between var, let, and const?
 
 //* Answer: var is function scoped, let and const are block scoped. 
 
@@ -249,9 +249,9 @@ getMessage(sendMessage);
 
 
 
-//! What is JSON and what is it used for?
+//! Question: What is JSON and what is it used for?
 
-//* JavaScript Object Notation, or JSON is a standard text based data format used in web development to send and receive data.
+//* Answer: JavaScript Object Notation, or JSON is a standard text based data format used in web development to send and receive data.
 
 //? JSON is used to return data in the form of key-value pairs and arrays. This information is lightweight, and easy for humans to read and write.
 
@@ -371,9 +371,9 @@ fetch("/get-data-from-api", requestOptions)
 
 
 
-//! What is a constructor and why is it useful?
+//! Question: What is a constructor and why is it useful?
 
-//* The constructor function allows you to create multiple objects with similar properties and methods. 
+//* Answer: The constructor function allows you to create multiple objects with similar properties and methods. 
 
 //? Instead of creating each object manually, you can use a constructor function to create new objects with the same structure and behaviors.
 
@@ -392,9 +392,9 @@ console.log(`You car color is: ${myCar.color}`);
 
 
 
-//! What are the different types of loops in Javascript
+//! Question: What are the different types of loops in Javascript
 
-//* There are four different types of loops in Javascript: For loops, while loops, do while, forEach 
+//* Answer: There are four different types of loops in Javascript: For loops, while loops, do while, forEach 
 
 // for loop
 for (let i = 0; i < 5; i++) {
@@ -446,9 +446,9 @@ cars.forEach((element) => {
 
 
 
-//! What is recursion?
+//! Question: What is recursion?
 
-//* Recursion happens when a function calls itself, either directly or indirectly. 
+//* Answer: Recursion happens when a function calls itself, either directly or indirectly. 
 
 //? In a recursive function, the function repeatedly breaks down a problem into smaller and smaller sub-problems until it reaches a base case, which is a problem that is simple enough to solve directly.
 
@@ -561,13 +561,23 @@ date.setTime(1678836811532); // sets unix time
 
 
 
-//! Question: What is the difference between == and === in Javascript
+//! Question: What is the difference between == and === in Javascript?
 
 //* Answer: == and === are two different comparison operators that are used to compare values. 
 
 //? The == operator checks if two values are equal after performing type coercion.
 
-//? The === operator checks if two values are equal, but does not perform type coercion
+//? The === operator checks if two values are equal, but does not perform type coercion.
 
 1 == "1" // true
 1 === "false" // false
+
+
+
+
+//! Question: What are template literals in Javascript.
+
+//* Answer: Template literals allow you to embed expressions and variables inside a string, using the `${}` syntax.
+
+const phone = 'iPhone';
+const message = `I own an ${phone}`;
