@@ -557,3 +557,17 @@ date.setMinutes(45); // sets minutes to 45
 date.setSeconds(30); // sets seconds to 30
 date.setMilliseconds(20); // sets milliseconds to 20
 date.setTime(1678836811532); // sets unix time
+
+
+
+
+//! Question: What is the difference between == and === in Javascript
+
+//* Answer: == and === are two different comparison operators that are used to compare values. 
+
+//? The == operator checks if two values are equal after performing type coercion.
+
+//? The === operator checks if two values are equal, but does not perform type coercion
+
+1 == "1" // true
+1 === "false" // false
