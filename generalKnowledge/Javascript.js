@@ -64,21 +64,6 @@ typeof aNewDate; // object
 
 
 
-//! Question: How can you optimize a website for performance?
-
-//* Answer: There are several ways to optimize a website for performance:
-
-//? Minifying and compressing files to reduce the size of the page and speed up loading times.
-
-//? Using a content delivery network (CDN) to distribute content closer to users and reduce latency.
-
-//? Using caching techniques to store frequently used resources locally, reducing the amount of data that needs to be transferred.
-
-//? Optimizing images and videos to reduce their file sizes. Using lazy loading to defer loading of non-critical resources until they are needed.
-
-
-
-
 //! Question: Explain the difference between var, let, and const?
 
 //* Answer: var is function scoped, let and const are block scoped. 
@@ -679,8 +664,8 @@ Number.POSITIVE_INFINITY; // returns infinity
 
 //! Question: How do you select a specific element based on its position in a nodeList?
 
-//* Answer: you can use bracket notation to access individual elements in the nodelist.
+//* Answer: You can use bracket notation to access individual elements in the nodelist.
 
-//? NodeList is a zero-indexed array-like object, so the first element has an index of 0.
+//? The nodeList is a zero-indexed array-like object, so the first element has an index of 0.
 
 const secondParagraph = document.querySelectorAll('p')[1]; // selects the second paragraph in the nodelist
