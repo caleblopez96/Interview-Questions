@@ -673,3 +673,14 @@ Number.MAX_VALUE; // returns largest possible JS number
 Number.MIN_VALUE; // returns smallest possible JS number
 Number.NEGATIVE_INFINITY; // returns -infinity
 Number.POSITIVE_INFINITY; // returns infinity
+
+
+
+
+//! Question: How do you select a specific element based on its position in a nodeList?
+
+//* Answer: you can use bracket notation to access individual elements in the nodelist.
+
+//? NodeList is a zero-indexed array-like object, so the first element has an index of 0.
+
+const secondParagraph = document.querySelectorAll('p')[1]; // selects the second paragraph in the nodelist
