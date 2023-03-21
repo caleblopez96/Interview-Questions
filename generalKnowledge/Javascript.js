@@ -195,6 +195,22 @@ arrowThis.greeting(); // "Hello, my name is "
 
 
 
+//! Question: How do you loop over an array and select a random element from that array?
+
+//* Answer: To loop over an array in javascript you can use a for loop.
+//* To return a random element, you can use Math.random()
+
+const streamingPlatforms =['netflix', 'prime video', 'hulu', 'peacock', 'hbomax'];
+
+for(let i = 0; i < 1; i++) {
+    const randomIndex = Math.floor(Math.random() * streamingPlatforms.length);
+    const randomPlatform = streamingPlatforms[randomIndex];
+    console.log(randomPlatform);
+}
+
+
+
+
 //! What is hoisting in Javascript?
 
 //* Answer: Hoisting is a behavior in JavaScript where variable and function declarations are moved to the top of their scope, regardless of where they are declared in the code. 
