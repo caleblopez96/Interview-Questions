@@ -208,6 +208,13 @@ for(let i = 0; i < 1; i++) {
     console.log(randomPlatform);
 }
 
+// example 2:
+for(let i = 0; i < 1; i++) {
+    const skills = ['html', 'css', 'javascript', 'bootstrap'];
+    const randomSkill = skills[Math.floor(Math.random() * skills.length)];
+    console.log(randomSkill);
+}
+
 
 
 
