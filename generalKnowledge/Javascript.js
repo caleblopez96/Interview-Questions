@@ -563,22 +563,19 @@ fetch(url)
 .catch(error => console.error(error));
 
 // POST request
-const newPost = {
-    title: 'New post',
-    body: 'This is my new content.',
-    userId: 1
-}
 
-fetch(url, {
-    method: 'POST',
-    headers: {
-        'Content-Type' : 'application/json'
-    },
-    body: JSON.stringify(newPost)
-})
-.then(response => response.json())
-.then(data => console.log(data))
-.catch(error => console.error(error));
+function getJoke() {
+    fetch('https://icanhazdadjoke.com/' , {
+        headers: {
+            'Accept' : 'application/json'
+        }
+    }).then(function(response) {
+        return response.json();
+    }).then(function(data) {
+        const joke = data.joke;
+        console.log(joke);
+    }).catch(error => console.error(error));
+}
 
 // PUT request
 const updatedPost = {
