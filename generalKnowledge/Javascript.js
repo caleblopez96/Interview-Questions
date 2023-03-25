@@ -183,7 +183,7 @@ arrowThis.greeting(); // "Hello, my name is "
 
 //* Answer: The event loop is a mechanism in JavaScript that handles the execution of code and manages the callback queue. It processes the messages or events in the queue and executes the corresponding code.
 
-//? The event loop helps handle the execution of asynchronous code.
+//? The event loop processes synchronous task before asynchronous task, which means that synchronous code will always be executed before any asynchronous code.
 
 
 
@@ -214,6 +214,19 @@ for(let i = 0; i < 1; i++) {
     const randomSkill = skills[Math.floor(Math.random() * skills.length)];
     console.log(randomSkill);
 }
+
+
+
+
+//! Question: Which array methods can be used to create a new array?
+
+//* Answer: In javascript, you can create a new array with the following methods: map(), filter() and reduce().
+
+[1, 2, 3, 4, 5].map((num) => Math.pow(num, 2)); // [1, 4, 9, 16, 25]
+
+[1, 2, 3, 4, 5].filter((num) => num % 2); // [1, 3, 5]
+
+[1, 2, 3, 4, 5].reduce((acc, num) => acc + num); // 15
 
 
 
