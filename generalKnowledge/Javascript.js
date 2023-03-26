@@ -198,7 +198,7 @@ arrowThis.greeting(); // "Hello, my name is "
 //! Question: How do you loop over an array and select a random element from that array?
 
 //* Answer: To loop over an array in javascript you can use a for loop.
-//* To return a random element, you can use Math.random()
+//* To return a random element, you can use Math.random().
 
 const streamingPlatforms =['netflix', 'prime video', 'hulu', 'peacock', 'hbomax'];
 
@@ -368,35 +368,27 @@ const parsedUser = JSON.parse(jsonString); // from JSON to javascript
 
 //! Question: What are promises and what are they used for?
 
-//* Answer: Promises are a way to handle asynchronous operations, like fetching data from a server or making an API call. 
+//* Answer: A Promise is an object that represents the eventual completion (or failure) of an asynchronous operation and its resulting value. Promises have three possible states: "pending", "fulfilled", or "rejected".
 
 //? Promises allow for you to write code that can respond to the results of asynchronous operations once complete, and doesn't block the main thread of execution.
 
-//TODO api not working
-//TODO fix the request option
-const requestConfig = {
-    method: 'GET',
-    headers: {
-        "Content-Type" : "application/json"
-    }
-}
-
-const randomJoke = () => {
-    return new Promise((resolve, reject) => {
-        fetch('https://official-joke-api.appspot.com/random_joke', requestConfig)
+function getJoke() {
+    const jokePromise = new Promise((resolve, reject) => {
+        fetch("https://icanhazdadjoke.com/", {
+        headers: {
+            Accept: "application/json"
+        }
+    })
         .then(response => response.json())
-        .then(data => {
-            resolve(data);
-        })
-        .catch(error => {
-            reject(error);
-        });
+        .then(data => resolve(data.joke))
+        .catch(error => reject(error));
+    });
+    jokePromise.then(joke => {
+        jokeText.innerText = `${joke}😂`;
+    }).catch(error => {
+        console.error(error);
     });
 }
-
-randomJoke()
-.then(joke => console.log(joke.setup, joke.punchline))
-.catch(error => console.log(error));
 
 
 
