@@ -112,13 +112,12 @@ document.querySelector('button').addEventListener('click', changeBackgroundColor
 function greet(name) {
     console.log(`Hello ${name}`);
 }
-greet('John');
 
 // Anonymous function
 const greeting2 = function(name) {
     console.log(`Hello, ${name}`);
 }
-greet('John');
+
 
 
 
@@ -192,13 +191,6 @@ arrowThis.greeting(); // "Hello, my name is "
 //* Answer: The event loop is a mechanism in JavaScript that handles the execution of code and manages the callback queue. It processes the messages or events in the queue and executes the corresponding code.
 
 //? The event loop processes synchronous task before asynchronous task, which means that synchronous code will always be executed before any asynchronous code.
-
-
-
-
-//! Question: How do you manipulate the Document Object Model (DOM)
-
-//* Answer: The Document Object Model (DOM) can be manipulated using JavaScript through its API, which provides methods and properties to access and modify HTML elements and their content.
 
 
 
@@ -700,13 +692,9 @@ Number.POSITIVE_INFINITY; // returns infinity
 
 
 
-//! Question: How do you select a specific element based on its position in a nodeList?
+//! Question: How do you manipulate the Document Object Model (DOM)
 
-//* Answer: You can use bracket notation to access individual elements in the nodelist.
-
-//? The nodeList is a zero-indexed array-like object, so the first element has an index of 0.
-
-const secondParagraph = document.querySelectorAll('p')[1]; // selects the second paragraph in the nodelist
+//? Answer: The Document Object Model (DOM) can be manipulated using JavaScript through its API, which provides methods and properties to access and modify HTML elements and their content.
 
 
 
@@ -780,3 +768,14 @@ element.innerHTML = '<p> new paragraph </p>';
 // modifying the attribute
 element.setAttribute(attribute, value);
 element.removeAttribute(attribute);
+
+
+
+
+//! Question: How do you select a specific element based on its position in a nodeList?
+
+//* Answer: You can use bracket notation to access individual elements in the nodelist.
+
+//? The nodeList is a zero-indexed array-like object, so the first element has an index of 0.
+
+const secondParagraph = document.querySelectorAll('p')[1]; // selects the second paragraph in the nodelist
