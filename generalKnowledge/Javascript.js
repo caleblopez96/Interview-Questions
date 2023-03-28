@@ -6,6 +6,14 @@
 
 
 
+//! Question: What is the data type of all variables in Javascript?
+
+//* Answer: All Javascript variables are of the object data type.
+
+//? Everything in Javascript is an object.
+
+
+
 //! Question: What are the different data types in Javascript? 
 
 //* Answer: Javascript has several data types that can be divided into two categories: primitve and non-primitive.
@@ -699,3 +707,76 @@ Number.POSITIVE_INFINITY; // returns infinity
 //? The nodeList is a zero-indexed array-like object, so the first element has an index of 0.
 
 const secondParagraph = document.querySelectorAll('p')[1]; // selects the second paragraph in the nodelist
+
+
+
+
+//! Question: How do you create elements in the DOM?
+
+//* Answer: To create an element in the DOM, use document.createElement().
+
+const element = document.createElement('element');
+parentElement.appendChild('element');
+
+const newDiv = document.createElement('div');
+body.appendChild('div');
+
+const ul = document.createElement('ul');
+const li = document.createElement('li');
+ul.appendChild(li);
+
+
+
+
+//! Question: How do you delete elements in the DOM?
+
+//* Answer: To delete elements in the DOM, use the removeChild() or remove() method.
+
+parent.removeChild();
+child.remove();
+
+
+ul.removeChild(li);
+li.remove();
+
+
+
+
+//! Question: How do you query DOM elements?
+
+//* Answer: To query DOM elements, use document.querySelector() or document.querySelectorAll().
+
+//? document.querySelector() returns the first element found in the query.
+
+//? document.querySelectorAll() returns all specified elements in a Node list.
+
+const domElement = document.querySelector('#elementId');
+
+const domElements = document.querySelectorAll('p'); // [Nodelist]
+
+
+
+
+//! Question: How do you modify an elements attribute using the DOM?
+
+//* Answer: To modify an elements attritbutes, you can use element.style. to modify the objects styles
+
+// modifying the style object
+element.style.backgroundColor = 'red';
+
+// modifying id 
+element.id = 'myId';
+
+// modifying class
+element.classList.add('myClass');
+element.classList.remove('myClass');
+
+// modifying text
+element.innerText = '';
+
+// modifying the HTML
+element.innerHTML = '<p> new paragraph </p>';
+
+// modifying the attribute
+element.setAttribute(attribute, value);
+element.removeAttribute(attribute);
