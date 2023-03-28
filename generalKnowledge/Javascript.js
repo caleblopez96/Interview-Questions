@@ -237,6 +237,11 @@ for(let i = 0; i < 1; i++) {
 
 //? This means that variables declared with var can be used before they are declared, while variables declared with let and const are not hoisted and cannot be used before declared.
 
+helloWorld();
+
+function helloWorld() {
+    console.log('hello world!');
+}
 
 
 
