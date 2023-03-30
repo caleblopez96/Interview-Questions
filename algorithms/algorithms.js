@@ -1,6 +1,6 @@
 //* Fibonacci sequence:
 
-// Given a number 'n', find hte first 'n' elements of the Fibonacci sequence.
+// Given a number 'n', find the first 'n' elements of the Fibonacci sequence.
 
 // In mathematics, the Fibonacci sequence is a sequence in which each number is the sum of the two preceding ones.
 
@@ -57,3 +57,27 @@ function isPrime(n) {
 }
 
 // Big - O = O(n)
+
+
+
+
+//* Power of two:
+
+// Given a positive integer 'n', determine if the number is a power of 2 or not.
+
+// An integer is a power of two if ther exists an integer 'x', such that 'n' === 2x
+
+function isPowerOfTwo(n) {
+    if(n < 1) {
+        return false;
+    }
+    while(n > 1) {
+        if(n % 2 !== 0) {
+            return false
+        }
+        n = n / 2
+    }
+    return true
+}
+
+// Big - O = O(logn)
