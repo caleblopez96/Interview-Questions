@@ -14,6 +14,8 @@
 
 
 
+
+
 //! Question: What are the different data types in Javascript? 
 
 //* Answer: Javascript has several data types that can be divided into two categories: primitve and non-primitive.
@@ -267,6 +269,8 @@ function divide(a, b) {
 }
 
 
+
+
 //! Question: Can you explain the difference between synchronous and asynchronous code in JavaScript?
 
 //* Answer: Synchronous code is executed in a blocking manner while asynchronous code allows for multiple events to be proccessed simultaneously.
@@ -463,7 +467,6 @@ class Car {
         this.model;
     }
 }
-
 const myCar = new Car('Red', '2018', 'Honda', 'Civic');
 console.log(`You car color is: ${myCar.color}`);
 
@@ -609,6 +612,39 @@ fetch(`${url}/${updatedPost.id}`,{
 
 
 
+//! Question: What is the Math object in javascript?
+
+//* Answer: The Math object is a built-in Javascript object that provides a set of properties and methods for performing mathematical operations.
+
+Math.abs(-5); // returns absolute value of the number --> 5
+Math.ceil(4.3); // rounds a number up to the nearest integer --> 5
+Math.round(4.5); // rounds a number to the nearest integer --> 5
+Math.pow(4, 2); // returns x raised to power of y --> 16
+Math.sqrt(9); // returns the square root of a number --> 3
+Math.floor(4.9); // rounds a number down to the nearest integer --> 4
+Math.sin(Math.PI / 4); // returns sine of given angle in radians --> 0.7071067811865475
+Math.cos(Math.PI / 6); // returns cossine of given angle in radians --> 0.8660254037844387
+Math.min(5, 2, 6, 9); // returns smallest of zero or more numbers --> 2
+Math.max(12, 16, 45, 30); // returns largest of zero or more numbers --> 45
+Math.log(10); // returns natual logarithm of number --> 2.302585092994046
+Math.exp(); // returns value raised to power of x
+Math.random(); // returns a random number between 0 and 1 
+Math.floor(Math.random * 10); // returns a random number 1 - 10
+Math.PI.toFixed(3); // returns a number specified by number of decimal places --> 3.141
+Math.PI.toPrecision(3); // returns a number specified by number --> 3.14
+Math.PI.valueOf(); // returns value of number --> 3.141592653589793
+Number('15'); // converts string to number --> 15
+parseInt('3 months'); // returns first whole number --> 3
+parseFloat('3.5 days'); // returns first floating point number --> 3.5
+Number.MAX_VALUE; // returns largest possible JS number
+Number.MIN_VALUE; // returns smallest possible JS number
+Number.NEGATIVE_INFINITY; // returns -infinity
+Number.POSITIVE_INFINITY; // returns infinity
+
+
+
+
+
 //! Question: How do you work with dates in Javascript?
 
 //* Answer: You can work with dates using the built-in 'Date' object.
@@ -656,38 +692,6 @@ date.setTime(1678836811532); // sets unix time
 
 const phone = 'iPhone';
 const message = `I own an ${phone}`;
-
-
-
-
-//! Question: What is the Math object in javascript?
-
-//* Answer: The Math object is a built-in Javascript object that provides a set of properties and methods for performing mathematical operations.
-
-Math.abs(-5); // returns absolute value of the number --> 5
-Math.ceil(4.3); // rounds a number up to the nearest integer --> 5
-Math.round(4.5); // rounds a number to the nearest integer --> 5
-Math.pow(4, 2); // returns x raised to power of y --> 16
-Math.sqrt(9); // returns the square root of a number --> 3
-Math.floor(4.9); // rounds a number down to the nearest integer --> 4
-Math.sin(Math.PI / 4); // returns sine of given angle in radians --> 0.7071067811865475
-Math.cos(Math.PI / 6); // returns cossine of given angle in radians --> 0.8660254037844387
-Math.min(5, 2, 6, 9); // returns smallest of zero or more numbers --> 2
-Math.max(12, 16, 45, 30); // returns largest of zero or more numbers --> 45
-Math.log(10); // returns natual logarithm of number --> 2.302585092994046
-Math.exp(); // returns value raised to power of x
-Math.random(); // returns a random number between 0 and 1 
-Math.floor(Math.random * 10); // returns a random number 1 - 10
-Math.PI.toFixed(3); // returns a number specified by number of decimal places --> 3.141
-Math.PI.toPrecision(3); // returns a number specified by number --> 3.14
-Math.PI.valueOf(); // returns value of number --> 3.141592653589793
-Number('15'); // converts string to number --> 15
-parseInt('3 months'); // returns first whole number --> 3
-parseFloat('3.5 days'); // returns first floating point number --> 3.5
-Number.MAX_VALUE; // returns largest possible JS number
-Number.MIN_VALUE; // returns smallest possible JS number
-Number.NEGATIVE_INFINITY; // returns -infinity
-Number.POSITIVE_INFINITY; // returns infinity
 
 
 
