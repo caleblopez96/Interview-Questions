@@ -52,7 +52,7 @@ typeof hugeNumber; // bigInt
 
 //? objects are the only non-primitve data type in Javascript
 //? objects consist of object literals, arrays, and dates 
-// objects for storing colletions of related data, that can contain properties and methods
+// objects for storing collections of related data, that can contain properties and methods
 const person2 = {
     name: 'john',
     age: '30',
