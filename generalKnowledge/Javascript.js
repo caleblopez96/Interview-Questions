@@ -15,7 +15,6 @@
 
 
 
-
 //! Question: What are the different data types in Javascript? 
 
 //* Answer: Javascript has several data types that can be divided into two categories: primitve and non-primitive.
@@ -364,7 +363,7 @@ function fetchData() {
 // using JSON.stringify() and JSON.parse().
 class User {
     constructor(age, sex, location) {
-        this.name = name;
+        this.age = age;
         this.sex = sex;
         this.location = location;
     } 
@@ -787,3 +786,52 @@ element.removeAttribute(attribute);
 //? The nodeList is a zero-indexed array-like object, so the first element has an index of 0.
 
 const secondParagraph = document.querySelectorAll('p')[1]; // selects the second paragraph in the nodelist
+
+
+
+
+//! Question: What is Big-O notation?
+
+//* Answer: Big O notation is a mathematical notation used to describe the asymptotic upper bound of the growth rate of a function.
+
+//? Ask yourself how does the algorithm grow as 'n' grows?
+
+const data = [1, 2, 3];
+// Time complexity: O(n) --> input grows 1 to 1 with output
+// Space complexity: O(1)
+for (let i = 0; i < data.length; i++) {
+    console.log(data[i]);
+}
+
+
+const out = [];
+// Time complexity: O(n)
+// Space complexity: O(1) --> creating a new array from the data array.
+for (let i = 0; i < data.length; i++) {
+    out[i] = data[i];
+}
+
+const data2 = ['A', 'B', 'C'];
+// O(n * a)
+for (let i = 0; i < data.length; i++) {
+    for (let j = 0; j < data2.length; j++) {
+        console.log(data[i] + data[j]);
+    }
+}
+
+// O(n ^ 2)
+for (let i = 0; i < data.length; i++) {
+    for (let j = 0; j < data.length; j++) {
+        console.log(data[i] + data[j]);
+    }
+}
+
+// O(4n^2) --> remove the leading constant, and/or the values that scale less = O(n^2)
+for (let i = 0; i < data.length; i++) {
+    for (let j = 0; j < data.length; j++) {
+        console.log(data[i] + data[j]);
+        console.log(data[i] + data[j]);
+        console.log(data[i] + data[j]);
+        console.log(data[i] + data[j]);
+    }
+}
