@@ -323,18 +323,22 @@ async function getdata() {
 
 //* Answer: A callback function is a function that is passed as an argument to another function and it is executed after some operation or event is executed.
 
-const sendMessage = (message) => {
-    // code goes here 
-    console.log("Message:", message);
+function fetchData(url, onSuccess, onError) {
+    fetch(url)
+    .then(response => response.json())
+    .then(data => onSuccess(data))
+    .catch(error => onError(error));
 }
 
-const getMessage = (sendMessage) => {
-    // code goes here
-    const message = 'Your message goes here';
-    sendMessage(message);
+function handleSuccess(data) {
+    console.log("Data received:", data);
 }
 
-getMessage(sendMessage);
+function handleError(error) {
+    console.log("Error:", error);
+}
+
+fetchData("https://example.com/data", handleSuccess, handleError);
 
 
 
