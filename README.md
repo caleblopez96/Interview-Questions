@@ -38,43 +38,63 @@ If you have any questions, you can reach me at caleblopez96@gmail.com
 </ul>
 
 <ul>
-<b>Question:</b> What are the different data types in Javascript?  
+<b>Question:</b> What are the different data types in Javascript?
 
 <b>Answer:</b> Javascript has several data types that can be divided into two categories: primitve and non-primitive.
 </ul>
-strings
-const buzzWord = 'Gotcha';
-typeof buzzWord; 
 
+``` 
+// strings represent textual data
+const buzzWord = 'Gotcha';
+typeof buzzWord; // string
+```
+``` 
 // numbers for representing numeric data
 const reports = 50; 
 typeof reports; // number
-
+```
+``` 
 // boolean for representing true/false values
 const isNightMode = false;
 typeof isNightMode; // boolean
-
+```
+``` 
 // null represents the absence of any object value
 const complaints = null;
 typeof complaints; // object
-
+```
+``` 
 // undefined represents a declared variable without a value
 let noValue;
 typeof noValue; // undefined
-
+```
+``` 
 // symbol for creating unique indetifiers for objects
 const mySymbol = Symbol('mySymbol');
 typeof mySymbol; // symbol
-
+```
+``` 
 // BigInt represents an integer that is too big
 const hugeNumber = BigInt(9007199254740991);
 typeof hugeNumber; // bigInt
-
-
-//? The seven primitve data types are:
-// strings represent textual data
-const buzzWord = 'Gotcha';
-typeof buzzWord; // string 
+```
+``` 
+// objects for storing collections of related data, that can contain properties and methods
+const person2 = {
+    name: 'john',
+    age: '30',
+    hobbies: ['reading', 'swimming', 'hiking'],
+    greet: () => {
+        console.log(`hello, my name is ${person2.name} and my hobbies are: ${person2.hobbies.join(' ').toString()}`);
+    }
+}
+typeof person2; // object
+```
+``` 
+// arrays are used to store a collection of data items of any type, such as strings, numbers, and objects.
+const arrayExample = [1, 2, 3, 4];
+typeof arrayExample; // object
+```
 
 
 
