@@ -43,42 +43,42 @@ If you have any questions, you can reach me at caleblopez96@gmail.com
 <b>Answer:</b> Javascript has several data types that can be divided into two categories: primitve and non-primitive.
 </ul>
 
-``` 
+```js 
 // strings represent textual data
 const buzzWord = 'Gotcha';
 typeof buzzWord; // string
 ```
-``` 
+```js
 // numbers for representing numeric data
 const reports = 50; 
 typeof reports; // number
 ```
-``` 
+```js
 // boolean for representing true/false values
 const isNightMode = false;
 typeof isNightMode; // boolean
 ```
-``` 
+```js
 // null represents the absence of any object value
 const complaints = null;
 typeof complaints; // object
 ```
-``` 
+```js 
 // undefined represents a declared variable without a value
 let noValue;
 typeof noValue; // undefined
 ```
-``` 
+``` js
 // symbol for creating unique indetifiers for objects
 const mySymbol = Symbol('mySymbol');
 typeof mySymbol; // symbol
 ```
-``` 
+```js 
 // BigInt represents an integer that is too big
 const hugeNumber = BigInt(9007199254740991);
 typeof hugeNumber; // bigInt
 ```
-``` 
+```js 
 // objects for storing collections of related data, that can contain properties and methods
 const person2 = {
     name: 'john',
@@ -90,7 +90,7 @@ const person2 = {
 }
 typeof person2; // object
 ```
-``` 
+``` js
 // arrays are used to store a collection of data items of any type, such as strings, numbers, and objects.
 const arrayExample = [1, 2, 3, 4];
 typeof arrayExample; // object
