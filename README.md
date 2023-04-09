@@ -31,9 +31,61 @@ If you have any questions, you can reach me at caleblopez96@gmail.com
 
 
 **Data types and variables**
-<i>Question:</i> What is the data type of all variables in Javascript?
+<ul>
+<b>Question:</b> What is the data type of all variables in Javascript? 
 
-<i>Answer:</i> All Javascript variables are of the object data type.
+<b>Answer:</b> All Javascript variables are of the object data type.<br>
+</ul>
+
+<ul>
+<b>Question:</b> What are the different data types in Javascript?  
+
+<b>Answer:</b> Javascript has several data types that can be divided into two categories: primitve and non-primitive.
+</ul>
+strings
+const buzzWord = 'Gotcha';
+typeof buzzWord; 
+
+// numbers for representing numeric data
+const reports = 50; 
+typeof reports; // number
+
+// boolean for representing true/false values
+const isNightMode = false;
+typeof isNightMode; // boolean
+
+// null represents the absence of any object value
+const complaints = null;
+typeof complaints; // object
+
+// undefined represents a declared variable without a value
+let noValue;
+typeof noValue; // undefined
+
+// symbol for creating unique indetifiers for objects
+const mySymbol = Symbol('mySymbol');
+typeof mySymbol; // symbol
+
+// BigInt represents an integer that is too big
+const hugeNumber = BigInt(9007199254740991);
+typeof hugeNumber; // bigInt
+
+
+//? The seven primitve data types are:
+// strings represent textual data
+const buzzWord = 'Gotcha';
+typeof buzzWord; // string 
+
+
+
+
+
+
+
+
+
+
+
 
 
 
