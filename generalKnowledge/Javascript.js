@@ -835,3 +835,37 @@ for (let i = 0; i < data.length; i++) {
         console.log(data[i] + data[j]);
     }
 }
+
+
+
+
+//! Question: What are math operators in Javascript?
+
+//* Answer: Math operators are used to perform arithmetic operations on values in Javascript.
+
+// Assignment operator (=) 
+// x = y
+
+// Addition operator (+) 
+// x = x + y => x += Y
+
+// Subtraction operator (-)
+// x = x - y => x -= y
+
+// Multiplication operator (*)
+// x = x * y => x *= y
+
+// Division operator (/)
+// x = x / y => x /= y
+
+// Modulo operator (%)
+// x = x % y => x %= y
+
+// Exponentiation operator (**)
+// x = x ** y => x **= y
+
+// Increment operator (++)
+// x = x + 1 => x++
+
+// Decrement operator (--)
+// x = x - 1 => x--
