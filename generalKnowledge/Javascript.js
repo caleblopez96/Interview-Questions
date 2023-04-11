@@ -684,7 +684,7 @@ date.setTime(1678836811532); // sets unix time
 //? The === operator checks if two values are equal, but does not perform type coercion.
 
 1 == "1" // true
-1 === "false" // false
+1 === "1" // false
 
 
 
