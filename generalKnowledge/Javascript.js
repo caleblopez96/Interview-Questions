@@ -160,6 +160,12 @@ const myFunction4 = new Function(
 // your function here
 );
 
+//? Immediately Invoked Function Expression (IIFE)
+(function () {
+    let eveningGreeting = 'Good Evening';
+    console.log(eveningGreeting);
+})();
+
 
 
 
