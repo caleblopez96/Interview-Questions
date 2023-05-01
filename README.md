@@ -63,14 +63,14 @@ If you have any questions, you can reach me at caleblopez96@gmail.com
 **.slice()**
 ``` js
 // Used to extract a section of a string and return it as a new string
-// without modifying the original string.
+// *without* modifying the original string.
 // string.slice(start, end)
 'Javascript'.slice(0, 4); // Java
 ```
 **.substring()**
 ``` js
 // Used to extract a section of a string and return it as a new string
-// without modifying the original string.
+// *without* modifying the original string.
 // substring(indexStart, indexEnd)
 'Javascript'.substring(4); // script
 ```
@@ -142,14 +142,15 @@ If you have any questions, you can reach me at caleblopez96@gmail.com
 ```
 **.indexOf()**
 ``` js
-// Used to create a new string by repeating the original string a specified number of times.
-//indexOf(searchString, position)
+// Searches for a specified substring within a string.
+// Returns the index of the first occurrence of the substring. 
+// If the substring is not found, it returns -1.
 'Javascript Developer'.indexOf('Developer'); // 11
 ```
 **.lastIndexOf()**
 ``` js
-// Used to create a new string by repeating the original string a specified number of times.
-//indexOf(searchString, position)
+//  Searches for the last occurrence of a specified substring within a string.
+// indexOf(searchString, position)
 'Javascript Developer'.lastIndexOf('Developer'); // 11
 ```
 **.search()**
