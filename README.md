@@ -30,6 +30,7 @@ If you have any questions, you can reach me at caleblopez96@gmail.com
 
 **Strings**<br>
 ``` js
+<b>.length</b>
 // The string.length property returns the number of characters in a string.
 'Javascript'.length; // 10
 ```
@@ -104,18 +105,76 @@ If you have any questions, you can reach me at caleblopez96@gmail.com
 ```
 
 
+``` js
+// Used to replace a substring with a new substring in a string.
+// Returns a new string with specificed element replaced.
+'JS JS'.replaceAll('JS', 'Javascript'); // 'Javascript Javascript'
+```
+
+``` js
+// used to remove white space (spaces, tabs, and newline characters) from both ends of a string.
+// It returns the trimmed string as a new string, leaving the original string unchanged.
+'     Javascript     '.trim(); // 'Javascript'
+```
+
+``` js
+// method is used to remove white space (spaces, tabs, and newline characters) from the beginning of a string. 
+// Returns the trimmed string as a new string, leaving the original string unchanged.
+'     Javascript'.trimStart(); // 'Javascript'
+```
+
+``` js
+// method is used to remove white space (spaces, tabs, and newline characters) from the end of a string. 
+// Returns the trimmed string as a new string, leaving the original string unchanged.
+'Javascript   '.trimEnd(); // 'Javascript'
+```
+
+``` js
+// used to pad the beginning of a string with a specified character, 
+// until the resulting string reaches a given length.
+// padStart(targetLength, padString)
+'Javascript'.padStart(3, '0'); // '000Javascript'
+```
 
 
+``` js
+// Used to determine whether a string ends with a specified suffix. 
+// Returns boolean value
+'Hello, World'.endsWith('World'); // True
+```
 
 
-
-
-' Javascript '.trim(); // 'Javascript'
-' Javascript '.trimStart(); // 'Javascript '
-' Javascript '.trimEnd(); // ' Javascript'
-'Javascript'.padStart(10, '*'); //
-'Javascript'.endsWith('t'); // true
+``` js
+// Used to create a new string by repeating the original string a specified number of times.
 'Javascript'.repeat(3); // 'JavascriptJavascriptJavascript'
-'Javascript Developer'.indexOf(' '); // 10
+```
+
+
+``` js
+// Used to create a new string by repeating the original string a specified number of times.
+//indexOf(searchString, position)
+'Javascript Developer'.indexOf('Developer'); // 11
+```
+
+
+``` js
+// Used to create a new string by repeating the original string a specified number of times.
+//indexOf(searchString, position)
+'Javascript Developer'.indexOf('Developer'); // 11
+```
+
+``` js
+// Used to create a new string by repeating the original string a specified number of times.
+//indexOf(searchString, position)
 'Javascript Developer'.lastIndexOf('Developer'); // 11
+```
+
+
+``` js
+// Searches for a specified substring within a string.
+// Returns the index of the first occurrence of the substring.
+```
+
+
+
 'Javascript Developer'.search('l'); // 15
