@@ -32,7 +32,7 @@ If you have any questions, you can reach me at caleblopez96@gmail.com
 Javascript string 
 
 ``` js
-The string.length property returns the returns the number of characters in a string.
+//The string.length property returns the returns the number of characters in a string.
 'Javascript'.length; // 10
 ```
 
