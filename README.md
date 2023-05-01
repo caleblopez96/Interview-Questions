@@ -28,11 +28,13 @@ If you have any questions, you can reach me at caleblopez96@gmail.com
 
 **Cheat Sheets**<br>
 
-**Cheat Sheets**<br>
-Javascript string 
-
+**Strings**<br>
 ``` js
-//The string.length property returns the returns the number of characters in a string.
+// The string.length property returns the number of characters in a string.
 'Javascript'.length; // 10
 ```
 
+``` js
+// use brackets to access the character at a specific index in a string.
+'Javascript'[2]; // v
+```
