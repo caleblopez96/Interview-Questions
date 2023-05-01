@@ -28,155 +28,133 @@ If you have any questions, you can reach me at caleblopez96@gmail.com
 
 **Cheat Sheets**<br>
 
-**Strings**<br>
+**-Strings-**<br>
 
 **.length** 
 ``` js
-// The string.length property returns the number of characters in a string.
+// Returns the number of characters in a string.
 'Javascript'.length; // 10
 ```
-**.charAt**
+**.charAt()**
 ``` js
 // Used to return the character at a specific index in a string.
 'Javascript'.charAt(2); // v
 ```
-
 **[]**
 ``` js
 // Use brackets to access the character at a specific index in a string.
 'Javascript'[2]; // v
 ```
-
+**.indexOf()**
 ``` js
 // Used to find the first index of a substring within a string.
 'Javascript'.indexOf('c'); // 5
 ```
-
+**.toLowerCase()**
 ``` js
 // Converts a string to lowercase.
 'Javascript'.toLowerCase(); // javascript
 ```
-
+**.toUpperCase()**
 ``` js
 // Converts a string to uppercase.
 'Javascript'.toUpperCase(); // JAVASCRIPT
 ```
-
+**.slice()**
 ``` js
 // Used to extract a section of a string and return it as a new string
 // without modifying the original string.
 // string.slice(start, end)
 'Javascript'.slice(0, 4); // Java
 ```
-
+**.substring()**
 ``` js
 // Used to extract a section of a string and return it as a new string
 // without modifying the original string.
 // substring(indexStart, indexEnd)
 'Javascript'.substring(4); // script
 ```
-
+**.concat()**
 ``` js
 // Concatenates two or more strings together, and returns the resulting concatenated string.
 // concat(str1, str2, /* …, */ strN)
 'Javascript'.concat(' Developer'); // 'Javascript Developer'
 ```
-
+**.split()**
 ``` js
  // Splits a string into an array of substrings, based on a specified separator string or regular expression.
 'Javascript'.split('Developer'); // ['Javascript', 'Developer']
 ```
-
+**.includes()**
 ``` js
 // Method is used to determine whether a string contains another string. 
 // Returns a boolean value.
 // includes(searchString, position)
 'Javascript'.includes('Java'); // True
 ```
-
+**.replace()**
 ``` js
 // Used to replace a substring with a new substring in a string.
 // Returns a new string with specificed element replaced.
 'Javascript Developer'.replace('Developer', 'sucks'); // 'Javascript sucks'
 ```
-
-``` js
-// Used to replace a substring with a new substring in a string.
-// Returns a new string with specificed element replaced.
-'JS JS'.replace('JS', 'Javascript'); // 'Javascript Javascript'
-```
-
-
+**.replaceAll()**
 ``` js
 // Used to replace a substring with a new substring in a string.
 // Returns a new string with specificed element replaced.
 'JS JS'.replaceAll('JS', 'Javascript'); // 'Javascript Javascript'
 ```
-
+**.trim()**
 ``` js
 // used to remove white space (spaces, tabs, and newline characters) from both ends of a string.
 // It returns the trimmed string as a new string, leaving the original string unchanged.
 '     Javascript     '.trim(); // 'Javascript'
 ```
-
+**.trimStart()**
 ``` js
 // method is used to remove white space (spaces, tabs, and newline characters) from the beginning of a string. 
 // Returns the trimmed string as a new string, leaving the original string unchanged.
 '     Javascript'.trimStart(); // 'Javascript'
 ```
-
+**.trimEnd()**
 ``` js
 // method is used to remove white space (spaces, tabs, and newline characters) from the end of a string. 
 // Returns the trimmed string as a new string, leaving the original string unchanged.
 'Javascript   '.trimEnd(); // 'Javascript'
 ```
-
+**.padStart()**
 ``` js
 // used to pad the beginning of a string with a specified character, 
 // until the resulting string reaches a given length.
 // padStart(targetLength, padString)
 'Javascript'.padStart(3, '0'); // '000Javascript'
 ```
-
-
+**.endsWith()**
 ``` js
 // Used to determine whether a string ends with a specified suffix. 
 // Returns boolean value
 'Hello, World'.endsWith('World'); // True
 ```
-
-
+**.repeat()**
 ``` js
 // Used to create a new string by repeating the original string a specified number of times.
 'Javascript'.repeat(3); // 'JavascriptJavascriptJavascript'
 ```
-
-
+**.indexOf()**
 ``` js
 // Used to create a new string by repeating the original string a specified number of times.
 //indexOf(searchString, position)
 'Javascript Developer'.indexOf('Developer'); // 11
 ```
-
-
-``` js
-// Used to create a new string by repeating the original string a specified number of times.
-//indexOf(searchString, position)
-'Javascript Developer'.indexOf('Developer'); // 11
-```
-
+**.lastIndexOf()**
 ``` js
 // Used to create a new string by repeating the original string a specified number of times.
 //indexOf(searchString, position)
 'Javascript Developer'.lastIndexOf('Developer'); // 11
 ```
-
-
+**.search()**
 ``` js
 // Searches for a specified substring within a string.
 // Returns the index of the first occurrence of the substring.
+// search(regexp)
 ```
-
-
-
-'Javascript Developer'.search('l'); // 15
