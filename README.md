@@ -29,17 +29,19 @@ If you have any questions, you can reach me at caleblopez96@gmail.com
 **Cheat Sheets**<br>
 
 **Strings**<br>
+
+**.length** 
 ``` js
-<b>.length</b>
 // The string.length property returns the number of characters in a string.
 'Javascript'.length; // 10
 ```
-
+**.charAt**
 ``` js
 // Used to return the character at a specific index in a string.
 'Javascript'.charAt(2); // v
 ```
 
+**[]**
 ``` js
 // Use brackets to access the character at a specific index in a string.
 'Javascript'[2]; // v
