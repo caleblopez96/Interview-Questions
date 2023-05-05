@@ -161,3 +161,15 @@ If you have any questions, you can reach me at caleblopez96@gmail.com
 
 
 **-Arrays-**<br>
+
+**.length**
+``` js
+// Returns the number of elements in an array. 
+// It is a read-only property, which means you cannot set the length of an array directly using this property.
+[1, 2, 3, 4, 5].length; // 5
+```
+**.push()**
+``` js
+// Adds element(s) to the end of an array and returns the new length
+[1, 2, 3, 4, 5].push(1); // 6 --> [1, 2, 3, 4, 5, 1]
+```
