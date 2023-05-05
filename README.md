@@ -159,3 +159,6 @@ If you have any questions, you can reach me at caleblopez96@gmail.com
 // Returns the index of the first occurrence of the substring.
 // search(regexp)
 ```
+
+
+**-Arrays-**<br>
