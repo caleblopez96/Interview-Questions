@@ -93,7 +93,7 @@ typeof aNewDate; // object
 const changeBackgroundColor = (color) => {
     return function () {
         document.body.style.backgroundColor = color;
-    };
+    }
 }
 
 document.querySelector('button').addEventListener('click', changeBackgroundColor('#353839'));
@@ -127,18 +127,18 @@ const greeting2 = function(name) {
 //* Answer: Functions can be declared by using the following: Function keyword, function expression, arrow function.
 
 //? Function keyword (regular function)
-function keyword() {
-    // your function goes here
+function yourFunctionName() {
+    // your code goes here
 }
 
 //? Function expression
-const myFunction = function() {
-    // your function goes here
+const yourFunctionName = function() {
+    // your code goes here
 }
 
 //? Arrow function multiple statments, no arguments
-const myFunction2 = () => {
-    // your function goes here
+const yourFunctionName = () => {
+    // your code goes here
 }
 
 //? Arrow function with multiple statements and arguments
@@ -156,9 +156,9 @@ const add = (num1, num2) => num1 + num2;
 const greeting = name => console.log(`Hello ${name}.`);
 
 //? Function constructor 
-const myFunction4 = new Function(
-// your function here
-);
+const yourFunctionName = new Function(
+// your code goes here
+)
 
 //? Immediately Invoked Function Expression (IIFE)
 (function () {
@@ -207,16 +207,16 @@ arrowThis.greeting(); // "Hello, my name is "
 //* Answer: To loop over an array in javascript you can use a for loop.
 //* To return a random element, you can use Math.random().
 
-const streamingPlatforms =['netflix', 'prime video', 'hulu', 'peacock', 'hbomax'];
+const streamingPlatforms = ['netflix', 'prime video', 'hulu', 'peacock', 'hbomax'];
 
-for(let i = 0; i < 1; i++) {
+for (let i = 0; i < 1; i++) {
     const randomIndex = Math.floor(Math.random() * streamingPlatforms.length);
     const randomPlatform = streamingPlatforms[randomIndex];
     console.log(randomPlatform);
 }
 
 // example 2:
-for(let i = 0; i < 1; i++) {
+for (let i = 0; i < 1; i++) {
     const skills = ['html', 'css', 'javascript', 'bootstrap'];
     const randomSkill = skills[Math.floor(Math.random() * skills.length)];
     console.log(randomSkill);
@@ -415,7 +415,7 @@ function getJoke() {
 
 //* Answer: Promise chaining makes asynchronous code easier to read and understand when dealing with nested and complex operations.
 
-//? Promises allow you to seperate the logic of each operation into seperate functions, which can be chained togetehr in a clear and concise manner.
+//? Promises allow you to seperate the logic of each operation into seperate functions, which can be chained together in a clear and concise manner.
 
 checkout()
 .then(data => {
