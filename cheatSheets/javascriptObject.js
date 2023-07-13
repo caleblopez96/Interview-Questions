@@ -22,21 +22,21 @@ Object.entries(person); // [['name', 'john'], ['age', '30'], ['location', 'usa']
 Object.assign(person, occupation); // {name: 'john', age: '30', location: 'usa', job: 'Software Engineer', rate: '$100'}
 
 
-
-
-// Object
-let obj = {};
-obj.name = 'caleb'
-obj.year = '1996'
-obj.speak = function () {
-    return `Hello my name is ${this.name} and I was born in ${this.year}`;
+// object destructuring
+const user = {
+    first: 'Marlon',
+    last: 'Brando',
+    email: 'example@email.com',
+    followers: 1250,
+    birthYear: 1984
 }
 
+// Destructure object and create variables for destructured values
+const { first, last, birthYear } = user;
+console.log(first); // Marlon
 
+function makeUserName({ first, last, birthYear }) {
+    return first + last + birthYear;
+}
 
-
-// (shallow) copy of object
-let copyOfObj = Object.assign({}, obj);
-copyOfObj.name = 'christopher'
-console.log(copyOfObj.speak());
-console.log(obj.speak());
+console.log(makeUserName(user)); // MarlonBrando1984
